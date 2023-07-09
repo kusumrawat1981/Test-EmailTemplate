@@ -124,3 +124,9 @@ font-size:1rem;
 line-height:30px;
 
 }
+.aboutMe
+{
+    display: flex;
+    justify-content: left;
+    color:#fff;
+}
