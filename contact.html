@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Contact</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+  <script>
+    function sendEmail() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      var mailtoLink = "mailto:kusumrawat1981@gmail.com"
+        + "?subject=" + encodeURIComponent("Contact Form Submission")
+        + "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="lft">
+            Kusum's Portfolio
+        </div>
+        <div class="rht">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="https://drive.google.com/file/d/17DjMT8Rrx2Jj0wTNut3VnAu7xoF5gPNW/view?usp=drive_link">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+  <div class="contactForm">
+    <h1>Contact Us</h1>
+  
+    <div class="formContainer" >
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+    
+        <div>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+    
+        <div class="submitB">
+          <button type="button" onclick="sendEmail()">Submit</button>
+        </div>
+      </form>
+  </div>
+  </div>
+  <footer>
+    <div class="footer-div">
+        <div class="footerFirst">
+            <h2>Kusum's Portfolio</h2>
+        </div>          
+        <div class="footerSecond">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerThird">
+            <ul>
+                <li>
+                    <a href="#"><img src="img/facebook.png" width="30"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/gmail.png"width="30"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/twitter.png" width="30"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
