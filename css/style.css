@@ -130,3 +130,41 @@ line-height:30px;
     justify-content: left;
     color:#fff;
 }
+contactForm{
+    padding: 50px 0;
+}
+.contactForm h1{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+    margin:20px 0;
+}
+.formContainer form{
+    padding: 15px;
+    border:2px solid #fff;
+}
+.formContainer div
+{
+    padding:10px 0;
+}
+.formContainer div label{
+    width:90px;
+    display: inline-block;
+    vertical-align: top;
+}
+.formContainer div button{
+    background-color: #000033;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+.submitB{
+    width:100%;
+    text-align: center;
+}
