@@ -130,8 +130,9 @@ line-height:30px;
     justify-content: left;
     color:#fff;
 }
-contactForm{
+.contactForm{
     padding: 50px 0;
+    height:60vh;
 }
 .contactForm h1{
     display: flex;
